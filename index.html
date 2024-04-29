@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | yyypluto</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="h-screen font-mono">
+    <div id="navbar">
+        <header class="flex flex-wrap sm:justify-start sm:flex-nowrap w-full text-lg py-4 bg-neutral-800 sticky">
+            <nav class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between"
+                aria-label="Global">
+                <a class="sm:order-1 flex-none text-2xl font-semibold dark:text-white" href="#">Shidiq</a>
+                <div class="sm:order-3 flex items-center gap-x-2">
+                    <button type="button"
+                        class="sm:hidden hs-collapse-toggle p-2.5 inline-flex justify-center items-center gap-x-2 rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-transparent dark:border-neutral-700 dark:text-white dark:hover:bg-white/10"
+                        data-hs-collapse="#navbar-alignment" aria-controls="navbar-alignment"
+                        aria-label="Toggle navigation">
+                        <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" x2="21" y1="6" y2="6" />
+                            <line x1="3" x2="21" y1="12" y2="12" />
+                            <line x1="3" x2="21" y1="18" y2="18" />
+                        </svg>
+                        <svg class="hs-collapse-open:block hidden flex-shrink-0 size-4"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="navbar-alignment"
+                    class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2">
+                    <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
+                        <a class="font-medium text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500"
+                            href="#general">General</a>
+                        <a class="font-medium text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500"
+                            href="#skill">Skill</a>
+                        <a class="font-medium text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500"
+                            href="#project">Project</a>
+                        <a class="font-medium text-gray-600 hover:text-gray-400 dark:text-neutral-400 dark:hover:text-neutral-500"
+                            href="#contact">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div id="hero" class="container mx-auto px-10">
+        <div id="content" class="mt-10 grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-2 grid-rows-3 gap-4 md:gap-4 sm:gap-2">
+            <div id="general">
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl h-full lg:h-full">
+                    <div class="bg-gray-100 border-b rounded-t-xl py-3 px-4 md:py-4 md:px-5">
+                        <p class="mt-1 text-sm text-gray-500">
+                            yyypluto > General
+                        </p>
+                    </div>
+                    <div class="p-4 md:p-5 h-full">
+                        <h3 class="text-lg font-bold text-gray-800">
+                            General
+                        </h3>
+                        <p class="mt-2 text-gray-500">
+                            Nama saya Farras, programmer dengan semangat yang membara, menyukai coding sejak kelas 7.
+                        </p>
+                        <p class="mt-5 mb-3 text-gray-500">
+                            Nama saya Farras, programmer dengan semangat yang membara, menyukai coding sejak kelas 7.
+                        </p>
+                        <button type="button"
+                            class="inline-flex gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-white disabled:opacity-50 disabled:pointer-events-none"
+                            onclick="more_about_me.showModal()">
+                            <p
+                                class="mt-2 inline-flex items-center gap-x-1 text-sm font-semibold rounded-lg border border-transparent text-blue-800 hover:text-blue-800 disabled:opacity-50 disabled:pointer-events-none dark:text-blue-500 dark:hover:text-blue-400">
+                                Lihat selengkapnya
+                                <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </p>
+                        </button>
+                        <br>
+                        <button class="btn mt-5" onclick="downloadPDF()">
+                            <ion-icon name="download"></ion-icon>
+                            Download CV
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="skill">
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl h-full">
+                    <div class="bg-gray-100 border-b rounded-t-xl py-3 px-4 md:py-4 md:px-5">
+                        <p class="mt-1 text-sm text-gray-500">
+                            yyypluto > Skill
+                        </p>
+                    </div>
+                    <div class="p-4 md:p-5">
+                        <div class="mt-0">
+                            <ol class="list-disc">
+                                <h3 class="text-lg font-bold text-gray-800">
+                                    Programming languange
+                                </h3>
+                                <li class="list-item list-inside hover:text-orange-700 hover:font-bold">Java</li>
+                                <li class="list-item list-inside hover:text-yellow-500 hover:font-bold">Javascript</li>
+                                <li class="list-item list-inside hover:text-purple-900 hover:font-bold">PHP</li>
+                                <li class="list-item list-inside hover:text-green-800 hover:font-bold">Python</li>
+                            </ol>
+                            <ol class="list-disc mt-3">
+                                <h3 class="text-lg font-bold text-gray-800">
+                                    Framework
+                                </h3>
+                                <li class="list-item list-inside hover:text-orange-800 hover:font-bold">Laravel</li>
+                                <li class="list-item list-inside hover:text-blue-700 hover:font-bold">Tailwind</li>
+                            </ol>
+                            <ol class="list-disc mt-3">
+                                <h3 class="text-lg font-bold text-gray-800">
+                                    DBMS
+                                </h3>
+                                <li class="list-item list-inside hover:text-gray-900 hover:font-bold">MySql</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="project">
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl lg:h-full">
+                    <div class="bg-gray-100 border-b rounded-t-xl py-3 px-4 md:py-4 md:px-5">
+                        <p class="mt-1 text-sm text-gray-500">
+                            yyypluto > Project
+                        </p>
+                    </div>
+                    <div class="p-4 md:p-5">
+                        <ol class="list-disc mt-0">
+                            <h3 class="text-lg font-bold text-gray-900">
+                                Personal project
+                            </h3>
+                            <li id="project_1" class="list-item list-inside">
+                                <button onclick="project_tmdbWannaBe.showModal()" class="underline lg:no-underline" class="underline lg:no-underline">TMDB-wannaBe</button>
+                            </li>
+                            <li id="project_2" class="list-item list-inside">
+                                <button onclick="project_Autofill_PKK_form.showModal()" class="underline lg:no-underline">Autofill-PKK-form</button>
+                            </li>
+                        </ol>
+                        <ol class="list-disc mt-5">
+                            <h3 class="text-lg font-bold text-gray-900">
+                                School project
+                            </h3>
+                            <li id="project_3" class="list-item list-inside">
+                                <button onclick="project_LetterboxdwannaBe.showModal()" class="underline lg:no-underline">Letterboxd-wannaBe</button>
+                            </li>
+                            <li id="project_4" class="list-item list-inside">
+                                <button onclick="project_ShowRay.showModal()" class="underline lg:no-underline">ShowRay</button>
+                            </li>
+                            <li id="project_5" class="list-item list-inside">
+                                <button onclick="project_Portofolio.showModal()" class="underline lg:no-underline">Portofolio</button>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div id="contacts">
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl h-full">
+                    <div class="bg-gray-100 border-b rounded-t-xl py-3 px-4 md:py-4 md:px-5">
+                        <p class="mt-1 text-sm text-gray-500">
+                            yyypluto > Contact > Phone
+                        </p>
+                    </div>
+                    <div class="p-4 md:p-5 grid grid-rows-3 gap-y-10">
+                        <div>
+                            <h3 class="text-sm lg:text-lg font-bold text-gray-900">
+                                <ion-icon name="call"></ion-icon>
+                                Phone number
+                            </h3>
+                            <p class="mt-2 text-gray-500 text-wrap text-sm">
+                                +62-8953-6469-3362
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-sm lg:text-lg font-bold text-gray-900">
+                                <ion-icon name="mail"></ion-icon>
+                                Email
+                            </h3>
+                            <p class="mt-2 text-gray-500 text-wrap text-sm">
+                                mfarrasashshiddiqi@gmail.com
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-sm lg:text-lg font-bold text-gray-900">
+                                <ion-icon name="call"></ion-icon>
+                                Address
+                            </h3>
+                            <p class="mt-2 text-gray-500 text-wrap text-sm">
+                                West java, Indonesia
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="social-media" class="lg:col-span-2 lg:h-full">
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl lg:h-full">
+                    <div class="bg-gray-100 border-b rounded-t-xl py-3 px-4 md:py-4 md:px-5">
+                        <p class="mt-1 text-sm text-gray-500">
+                            yyypluto > Contact > Phone
+                        </p>
+                    </div>
+                    <div class="p-4 md:p-5">
+                        <h3 class="text-sm lg:text-lg font-bold text-gray-900">
+                            <ion-icon name="people"></ion-icon>
+                            Connect To My Social Media
+                        </h3>
+                        <div class="mt-2 text-neutral-800 text-wrap  text-base md:text-lg lgtext-2xl">
+                            <a href="https://github.com/yayayapluto" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                            <a href="https://www.instagram.com/shidiqras_/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                            <a href=""><ion-icon name="logo-discord"></ion-icon></a>
+                            <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="h-[10%] mt-10 w-full text-center place-content-center bg-neutral-900">
+        <strong class="text-white">Made by farras 2024</strong>
+    </div>
+
+    <dialog id="more_about_me" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            </form>
+          <h3 class="font-bold text-lg">More about me</h3>
+          <img src="assets/profile.png" alt="" class="w-40 clear-both rounded-full mt-5 mb-3">
+                <p class="mt-8  text-md lg:text-justify md:textle">
+                    Nama saya
+                    <span class="font-semibold"> Farras, </span>
+                    Saya lahir di Depok dengan semangat yang menggelora. Sejak kelas 7, ketertarikan saya pada dunia
+                    coding mulai bersemi. Melalui perjalanan pendidikan di SMK, saya terus menggali lebih dalam ilmu
+                    tersebut. Meski masih dalam proses belajar, setiap langkah membawa saya lebih dekat untuk menguasai
+                    bidang ini.
+                </p>
+                <p class="mt-4 text-md  lg:text-justify md:textle">
+                    Dalam perkembangan saya, saya menemukan bahwa memahami coding bukanlah hanya tentang menguasai sintaks, 
+                    tetapi juga tentang memecahkan masalah dan menciptakan solusi inovatif. 
+                    Setiap tantangan yang saya hadapi menjadi kesempatan untuk belajar dan berkembang lebih lanjut.
+                </p>
+                <p class="mt-4 text-md  lg:text-justify md:textle">
+                    Kini, saya merasa bahwa coding bukan sekadar hobi, tetapi juga panggilan jiwa yang memacu saya untuk terus berkembang. 
+                    Saya yakin dengan ketekunan dan semangat yang saya miliki, saya akan menjadi seorang ahli di bidang ini suatu hari nanti.
+                </p>
+        </div>
+    </dialog>
+
+    <!--Project modal start-->
+    <dialog id="project_tmdbWannaBe" class="modal modal-middle">
+        <div class="modal-box">
+          <h3 class="font-bold text-lg">TMDB-wannaBe</h3>
+          <p class="py-4">Project using PHP</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+        
+    </dialog>
+    <dialog id="project_Autofill_PKK_form" class="modal modal-middle">
+        <div class="modal-box">
+          <h3 class="font-bold text-lg">Autofill PKK form</h3>
+          <p class="py-4">Project using Python</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+        
+    </dialog>
+    <dialog id="project_LetterboxdwannaBe" class="modal modal-middle">
+        <div class="modal-box">
+          <h3 class="font-bold text-lg">Letterboxd Wannabe</h3>
+          <p class="py-4">Project using PHP</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+        
+    </dialog>
+    <dialog id="project_ShowRay" class="modal modal-middle">
+        <div class="modal-box">
+            
+          <h3 class="font-bold text-lg">ShowRay</h3>
+          <p class="py-4">Project using PHP</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+        
+    </dialog>
+    <dialog id="project_Portofolio" class="modal modal-middle">
+        <div class="modal-box">
+            
+          <h3 class="font-bold text-lg">Portofolio</h3>
+          <p class="py-4">Project using HTML Tailwind</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+        
+    </dialog>
+    <!--Project modal end-->
+
+    <script src="control.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="node_modules/preline/dist/preline.js"></script>
+</body>
+
+</html>
